@@ -204,7 +204,6 @@ func (h apiHandler) handleGetRoom(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		return
 	}
-
 	sendJSON(w, room)
 }
 
