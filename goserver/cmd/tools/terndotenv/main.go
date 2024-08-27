@@ -2,7 +2,6 @@ package main
 
 import (
 	"os/exec"
-
 	"github.com/joho/godotenv"
 )
 
