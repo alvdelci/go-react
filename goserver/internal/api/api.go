@@ -381,7 +381,7 @@ func (h apiHandler) handleMarkMessageAsAnswered(w http.ResponseWriter, r *http.R
 	err = h.q.MarkMessageAsAnswered(r.Context(), id)
 	if err != nil {
 		http.Error(w, "something went wrong", http.StatusInternalServerError)
-		slog.Error("failed to react to message", "error", err)
+		slog.Error("failed to react to message as answered", "error", err)
 		return
 	}
 
